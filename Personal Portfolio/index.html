@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+      <div class="container">
+        <div class="nav">
+            <img src="images/logo.png.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#hearder">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </div>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi, I'm <span>Aman</span><br> Deep From Etawah</h1>
+        </div>
+      </div>  
+    </div>
+    <!--------------About------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>"Hello, my name is Aman Deep. I am currently a Diploma in IT student at Government polytechnic Ghaziabad. Learning new things about computers is my hobby,which is why I chose Information Technology. I am learning web development in my free time, and I believe I can become a good web developer.</p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links"onclick=" opentab('experience')">Experience</p>
+              <p class="tab-links"onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Learning</span><br>(Web development)</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>NO Experience</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2023 - Current</span><br> Diploma in IT from (Government polytechnic Ghaziabad)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------contact----------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>ad707863@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>9548690146</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100042220822011&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://x.com/AmanDee82831607?t=lCdMYtFoahxAOewNKrk1GA&s=08"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://www.instagram.com/amandeep.954_/profilecard/?igsh=ZDRna2ppMXNsZ2N4"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/aman-deep-0a92a3308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text"name="Name"placeholder="Your Name" required>
+              <input type="email"name="Email"placeholder="Your Email"required>
+              <textarea name="Message" rows="6"placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright &#169; Aman. My <i class="fa-solid fa-heart"></i> Portfolio</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
